@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BrainBoost CBSE 10</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>BrainBoost CBSE 10</h1>
+    <p>Learn. Play. Excel.</p>
+  </header>
+
+  <main>
+    <!-- Subject Selection -->
+    <section id="subjects">
+      <h2>Select a Subject</h2>
+      <div class="subject-buttons">
+        <button onclick="loadQuiz('math')">Math</button>
+        <button onclick="loadQuiz('science')">Science</button>
+        <button onclick="loadQuiz('it')">IT (Code 402)</button>
+      </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section id="quiz" class="hidden"></section>
+
+    <!-- Flashcards -->
+    <section id="flashcards" class="hidden"></section>
+
+    <!-- Study Tips -->
+    <section id="tips" class="hidden">
+      <h2>Study Tip of the Day</h2>
+      <p id="tipText">Loading tip...</p>
+    </section>
+
+    <!-- Chatbot -->
+    <div id="chatbot" class="hidden">
+      <h3>Ask the Bot</h3>
+      <input type="text" id="chatInput" placeholder="Ask a question..." />
+      <button onclick="sendMessage()">Send</button>
+      <div id="chatOutput"></div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="quiz.js"></script>
+  <script src="flashcards.js"></script>
+  <script src="tips.js"></script>
+  <script src="chatbot.js"></script>
+</body>
+</html>
